@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>AP's Threater </title>
+    <link rel ="shortcut icon" href ="Favicon.jpg" type= "image/x - icon">
+<head>
+<style>
+  body { background-color: rgb(255, 255, 255); } 
+  h1   { color: rgb(255, 4, 0); } 
+  p    { color: rgb(0, 0, 0); }
+  .centered {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="centered">
+    <h1>Welcome to AP's Theatre</h1>
+    <p>Toy Story :-</p>
+    <button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+    <button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+  </div>
+<video controls autoplay name="media">
+  <source src="file:///E:/C%20User%20download/Telegram%20Desktop/Toy.Story.1995.BRRip.Muaud.mkv" type="video/webm">
+  <script>
+    let vid = document.getElementById("myVideo");
+    function getVolume() { 
+      alert(vid.volume); 
+    }
+
+    // Function to set volume to 0.2
+    function setHalfVolume() { 
+      vid.volume = 0.2;
+    } 
+
+    // Function to set volume to 1.0
+    function setFullVolume() { 
+      vid.volume = 1.0;
+    } 
+  </script> 
+</body>
+</html>
